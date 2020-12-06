@@ -14,48 +14,60 @@
 	  <style type="text/css">
 		.oculto { display: none; }
 		.visible { display: inline; }
+	    .enlace1 {color: cornflowerblue;}
+	    .enlace2 {color: cornflowerblue;}
 	  </style>
+	  
   </head>
   <body>
 	  <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-  <a class="navbar-brand" href="#">Pastelería Tabarca</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbart" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+	  <a class="navbar-brand" href="#">Pastelería Tabarca</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbart" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
 
-  <div class="collapse navbar-collapse" id="navbar">
-    <ul class="navbar-nav mr-auto">
-		<li class="nav-item">
-			<img src="Imagenes_pasteleria/Tabarca_Logo.png" width="40" height="40">
-		</li>
-	  <li class="nav-item">
-        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="productos.html">Productos</a>
-      </li>
-		<li class="nav-item">
-        <a class="nav-link" href="pedidos.html">Pedidos</a>
-      </li>
-		<li class="nav-item">
-        <a class="nav-link" href="local.html">Nuestro Local</a>
-      </li>
-	  <li class="nav-item">
-        <a class="nav-link" href="conocenos.html">Conócenos</a>
-      </li>
-    </ul>
-	  <!-- Busqueda-->
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2 rounded-pill" type="search" placeholder="Buscar" aria-label="Search">
-      <button class="btn btn-outline-dark my-2 my-sm-0 rounded-circle" type="submit"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
-  <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
-</svg></button>
-    </form>
-  </div>
-</nav>		
-<!--Carrusel -->
+	  <div class="collapse navbar-collapse" id="navbar">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<img src="Imagenes_pasteleria/Tabarca_Logo.png" width="40" height="40">
+			</li>
+		  <li class="nav-item">
+			<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="productos.html">Productos</a>
+		  </li>
+			<li class="nav-item">
+			<a class="nav-link" href="pedidos">Pedidos</a>
+		  </li>
+			<li class="nav-item">
+			<a class="nav-link" href="local.html">Nuestro Local</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="conocenos.html">Conócenos</a>
+		  </li>
+		</ul>
+		  <!-- Busqueda-->
+		<form class="form-inline my-2 my-lg-0">
+			<div>
+				<a class="nav-link" href="carrito.html" >
+					<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+					</svg>
+				</a>
+			</div>
+		  <input class="form-control mr-sm-2 rounded-pill" type="search" placeholder="Buscar" aria-label="Search">
+		  <button class="btn btn-outline-dark my-2 my-sm-0 rounded-circle" type="submit">
+			  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+			  <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+			  <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+			  </svg>
+		  </button>
+		</form>
+	  </div>
+	</nav>		
+     <!--Carrusel -->
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 	  <ol class="carousel-indicators">
 		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -64,7 +76,7 @@
 	  </ol>
 	  <div class="carousel-inner">
 		<div class="carousel-item active">
-		  <img src="Imagenes_pasteleria/delicias_pequenas.png" width="800" height="600" class="d-block w-100" alt="...">
+		  <img src="Imagenes_pasteleria/delicias_pequenas.png" width="800" height="500" class="d-block w-100" alt="...">
 			<div class="carousel-caption d-none d-md-block">
 				<img src="Imagenes_pasteleria/Tabarca_Logo.png" width="300" height="300">
 				<h1>Pastelería Tabarca</h1>
@@ -72,7 +84,7 @@
 			</div>
 		</div>
 		<div class="carousel-item">
-		  <img src="Imagenes_pasteleria/pastel_hojarasca_peq.png" width="800" height="600" class="d-block w-100" alt="...">
+		  <img src="Imagenes_pasteleria/pastel_hojarasca_peq.png" width="800" height="500" class="d-block w-100" alt="...">
 				<div class="carousel-caption d-none d-md-block">
 					<img src="Imagenes_pasteleria/Tabarca_Logo.png" width="300" height="300">
 					<h1>Pastelería Tabarca</h1>
@@ -80,7 +92,7 @@
 			</div>
 		</div>
 		<div class="carousel-item">
-		  <img src="Imagenes_pasteleria/tarta peque.png" width="800" height="600" class="d-block w-100" alt="...">
+		  <img src="Imagenes_pasteleria/tarta peque.png" width="800" height="500" class="d-block w-100" alt="...">
 			<div class="carousel-caption d-none d-md-block">
 				<img src="Imagenes_pasteleria/Tabarca_Logo.png" width="300" height="300">
 				<h1>Pastelería Tabarca</h1>
@@ -108,14 +120,19 @@
 				   <img class="bd-placerholder-img rounded-circle" align="center"  src="Imagenes_pasteleria/Pastel selva negra.JPG" width="140" height="140" ></a>
 			  </div>
 			  <h3 class="py-3" align="center" >Nuestros Productos</h3>
-		  	<p>Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica. Lorem Ipsum ha sido el texto de relleno estándar de la industria desde la década de 1500<span id="adicional" class="oculto">cuando un impresor desconocido tomó una galera de tipos y la mezcló para hacer un libro de muestras tipográfico.</span><a id="enlace" href="#" onclick="muestra(); return false;">Seguir leyendo</a></p>
+				<p>Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica. Lorem Ipsum ha sido el texto de relleno estándar de la industria desde la década de 1500 
+					<a id="enlace1" clase="enlace1" onclick="muestra(); return true">Seguir leyendo</a>
+						<span id="adicional" class="oculto">El Lorem Ipsum fue concebido como un texto de relleno, formateado de una cierta manera para permitir la presentación de elementos gráficos en documentos, sin necesidad de una copia formal. 
+						<a id="enlace2" class="enlace2" onclick="oculto(); return true">Ocultar Contenido</a>
+						</span>
+				</p> 
 		  </div>
 		  <div class="col-4 py-5 text-justify">
 			  <div align="center">
 			  	<a href="conocenos.html"><img class="bd-placerholder-img rounded-circle" align="center"  src="Imagenes_pasteleria/Tabarca_Logo.png" width="140" height="140" ></a>
 			  </div>
 			  <h3 class="py-3" align="center">Conócenos</h3>
-		  	<p>Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica. Lorem Ipsum ha sido el texto de relleno estándar de la industria desde la década de 1500, cuando un impresor desconocido tomó una galera de tipos y la mezcló para hacer un libro de muestras tipográfico.</p>
+			  	<p>Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica. Lorem Ipsum ha sido el texto de relleno estándar de la industria desde la década de 1500, cuando un impresor desconocido tomó una galera de tipos.</p>
 		  </div>
 		  <div class="col-4 py-5 text-justify">
 			  <div align="center">
@@ -123,7 +140,7 @@
 			  	
 			  </div>
 			  <h3 class="py-3" align="center">Siguenos</h3>
-		  	<p>Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica. Lorem Ipsum ha sido el texto de relleno estándar de la industria desde la década de 1500, cuando un impresor desconocido tomó una galera de tipos y la mezcló para hacer un libro de muestras tipográfico.</p>
+		  	<p>Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica. Lorem Ipsum ha sido el texto de relleno estándar de la industria desde la década de 1500, cuando un impresor desconocido tomó una galera de tipos.</p>
 		  </div>
 	</div>
 </div> 
