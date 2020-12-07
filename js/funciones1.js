@@ -1,42 +1,61 @@
-
-function valida() {
-
 	var nombre = document.getElementById('nombre');
 	var apellido = document.getElementById('apellido');
 	var email = document.getElementById('email');
 	var telefono = document.getElementById('telefono');
 	var mensaje = document.getElementById('mensaje');
 	var fecha = document.getElementById('fecha');
+
+function valida() {
 	
-	
+	var respuesta = true;
+
 	
 	if (nombre.value == "") {
 		alert('Debe ingresar nombre')
 		nombre.focus();
+		respuesta = false;
 		
 		
 	} else if (apellido.value == "") {
 		alert('Debe ingresar apellido')
 		apellido.focus();
+		respuesta = false;
 		
 	} else if ((email.value == "") || (validaEmail(email.value) == false)) {
 		alert('Debe ingresar email válido')
 		email.focus();
+		respuesta = false;
 		
 	} else if ((telefono.value == "") || (isNaN(telefono.value)) || (telefono.value.length < 9) || (telefono.value < 200000000)) {
 		alert('Debe ingresar teléfono válido')
 		telefono.focus();
+		respuesta = false;
 		
 	} else if (mensaje.value == "") {
 		alert('Debe ingresar mensaje')
 		mensaje.focus();
+		respuesta = false;
 		
 	} else if ((fecha.value == "") || (fecha.value) == false) {
 		alert('Debe ingresar fecha de entrega válida')
 		fecha.focus();
-		
-	}	
+		respuesta = false;
+	}
+	if(respuesta){
+		$('#modal').modal('show');
+		limpiar();
+	}
 }
+function limpiar(){
+
+	nombre.value = "";
+	apellido.value = "";
+	email.value = "";
+	telefono.value = "";
+	mensaje.value = "";
+	fecha.value = "";
+}
+
 
 function validaFecha(fecha){
 var fechaf = fecha.split("-");
