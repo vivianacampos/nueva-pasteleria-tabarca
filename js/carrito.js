@@ -1,10 +1,10 @@
 // JavaScript Document
-const addToShoppingCartButtons = document.querySelectorAll('.addToCart');
-addToShoppingCartButtons.forEach(addToCartButton => {
-	addToCartButton.addEventListener('click', () => addToCartClicked);
-})
 
-function addToCartClicked(event){
-	cont button = event.target;
-	console.log(':addToCartClicked -> button', button);
+function anade("titulo","valor", "imagen"){
+	titulo = document.getElementById('nombre').value;
+	valor = document.getElementById('valor').value;
+	imagen = document.getElementById('imagen').value;
+	
+	
+	
 }

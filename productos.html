@@ -8,11 +8,12 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" href="js/carrito.js">
   </head>
   <body>
 	  	  <!--Navbar-->
 <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-	  <a class="navbar-brand" href="#">Pastelería Tabarca</a>
+
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbart" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	  </button>
@@ -38,7 +39,7 @@
 			<a class="nav-link" href="conocenos.html">Conócenos</a>
 		  </li>
 		</ul>
-		  <!-- Busqueda-->
+	  <!-- Carrito nav-->
 		<form class="form-inline my-2 my-lg-0">
 			<div>
 				<a class="nav-link" href="carrito.html" >
@@ -47,13 +48,7 @@
 					</svg>
 				</a>
 			</div>
-		  <input class="form-control mr-sm-2 rounded-pill" type="search" placeholder="Buscar" aria-label="Search">
-		  <button class="btn btn-outline-dark my-2 my-sm-0 rounded-circle" type="submit">
-			  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-			  <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
-			  <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
-			  </svg>
-		  </button>
+
 		</form>
 	  </div>
 	</nav>	
@@ -66,10 +61,10 @@
           <div class="card mb-4 shadow-sm">
            <img src="Imagenes_pasteleria/berlines.jpg" width="348" height="225">
             <div class="card-body">
-				<p class="card-text">Berlin horneado relleno de crema pastelera.</p><p>Valor: $500 c/u</p>
+				<p class="card-text">Berlin relleno de crema pastelera.</p><h6 class="item-price pb-3">$500</h6>
 				<div class="d-flex justify-content-between align-items-center">
                	 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary addToCart">Añadir al Carrito</button>
+                  <button type="button" class="btn btn-sm btn-outline-success addToCart">Añadir al Carrito</button>
                 </div>
                 <small class="text-muted"></small>
               </div>
@@ -78,13 +73,12 @@
         </div>
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-           <img src="Imagenes_pasteleria/Brazo de Reina.JPG" width="348" height="225">
+           <img src="Imagenes_pasteleria/Brazo de Reina.JPG" width="348" height="225" id="imagen">
             <div class="card-body">
-              <p class="card-text">Brazo de Reina.</p>
-				<p>Valor: $3.500 c/u</p>
+              <p class="card-text" title="titulo">Brazo de Reina.</p><h6 class="item-price pb-3" id="precio">$3.500</h6>
 				<div class="d-flex justify-content-between align-items-center">
                	 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary addToCart">Añadir al Carrito</button>
+                  <button type="button" class="btn btn-sm btn-outline-success addToCart">Añadir al Carrito</button>
                 </div>
                 <small class="text-muted"></small>
               </div>
@@ -95,11 +89,10 @@
           <div class="card mb-4 shadow-sm">
            <img src="Imagenes_pasteleria/cheesecake_maracuya.JPG" width="348" height="225">
             <div class="card-body">
-              <p class="card-text">Cheescake de maracuya.</p>
-				<p>Valor: $2.500 c/u</p>
+              <p class="card-text">Cheescake de maracuya.</p><h6 class="item-price pb-3">$2.500</h6>
 				<div class="d-flex justify-content-between align-items-center">
                	 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary addToCart">Añadir al Carrito</button>
+                  <button type="button" class="btn btn-sm btn-outline-success addToCart">Añadir al Carrito</button>
                 </div>
                 <small class="text-muted"></small>
               </div>
@@ -112,11 +105,10 @@
           <div class="card mb-4 shadow-sm">
            <img src="Imagenes_pasteleria/Cinnamon roll.JPG" width="348" height="225">
             <div class="card-body">
-              <p class="card-text">Roll de canela.</p>
-				<p>Valor: $1.500 c/u</p>
+              <p class="card-text">Roll de canela.</p><h6 class="item-price pb-3">$1.500</h6>
 				<div class="d-flex justify-content-between align-items-center">
                	 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary addToCart">Añadir al Carrito</button>
+                  <button type="button" class="btn btn-sm btn-outline-success addToCart">Añadir al Carrito</button>
                 </div>
                 <small class="text-muted"></small>
               </div>
@@ -127,11 +119,10 @@
           <div class="card mb-4 shadow-sm">
            <img src="Imagenes_pasteleria/cocadas.JPG" width="348" height="225">
             <div class="card-body">
-              <p class="card-text">Cocadas.</p>
-				<p>Valor: $500 c/u</p>
+              <p class="card-text">Cocadas.</p><h6 class="item-price pb-3">$500</h6>
 				<div class="d-flex justify-content-between align-items-center">
                	 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary addToCart">Añadir al Carrito</button>
+                  <button type="button" class="btn btn-sm btn-outline-success addToCart">Añadir al Carrito</button>
                 </div>
                 <small class="text-muted"></small>
               </div>
@@ -142,11 +133,10 @@
           <div class="card mb-4 shadow-sm">
            <img src="Imagenes_pasteleria/Delicias.JPG" width="348" height="225">
             <div class="card-body">
-              <p class="card-text">Delicias.</p>
-				<p>Valor: $800 c/u</p>
+              <p class="card-text">Delicias.</p><h6 class="item-price pb-3">$800</h6>
 				<div class="d-flex justify-content-between align-items-center">
                	 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary addToCart">Añadir al Carrito</button>
+                  <button type="button" class="btn btn-sm btn-outline-success addToCart">Añadir al Carrito</button>
                 </div>
                 <small class="text-muted"></small>
               </div>
@@ -158,11 +148,10 @@
           <div class="card mb-4 shadow-sm">
            <img src="Imagenes_pasteleria/Donas.JPG" width="348" height="225">
             <div class="card-body">
-              <p class="card-text">Donuts.</p>
-				<p>Valor: $1.000 c/u</p>
+              <p class="card-text">Donuts.</p><h6 class="item-price pb-3">$1.000</h6>
 				<div class="d-flex justify-content-between align-items-center">
                	 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary addToCart">Añadir al Carrito</button>
+                  <button type="button" class="btn btn-sm btn-outline-success addToCart">Añadir al Carrito</button>
                 </div>
                 <small class="text-muted"></small>
               </div>
@@ -173,11 +162,10 @@
           <div class="card mb-4 shadow-sm">
            <img src="Imagenes_pasteleria/empolvados.jpg" width="348" height="225">
             <div class="card-body">
-              <p class="card-text">Empolvados.</p>
-				<p>Valor: $500 c/u</p>
+              <p class="card-text">Empolvados.</p><h6 class="item-price pb-3">$500</h6>
 				<div class="d-flex justify-content-between align-items-center">
                	 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary addToCart">Añadir al Carrito</button>
+                  <button type="button" class="btn btn-sm btn-outline-success addToCart">Añadir al Carrito</button>
                 </div>
                 <small class="text-muted"></small>
               </div>
@@ -188,11 +176,10 @@
           <div class="card mb-4 shadow-sm">
            <img src="Imagenes_pasteleria/Kuchen de manzana.JPG" width="348" height="225">
             <div class="card-body">
-              <p class="card-text">Kuchen de Manzana.</p>
-				<p>Valor: $5.500</p>
+              <p class="card-text">Kuchen de Manzana.</p><h6 class="item-price pb-3">$5.500</h6>
 				<div class="d-flex justify-content-between align-items-center">
                	 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary addToCart">Añadir al Carrito</button>
+                  <button type="button" class="btn btn-sm btn-outline-success addToCart">Añadir al Carrito</button>
                 </div>
                 <small class="text-muted"></small>
               </div>
@@ -204,11 +191,10 @@
           <div class="card mb-4 shadow-sm">
            <img src="Imagenes_pasteleria/lengua de gato.png" width="348" height="225">
             <div class="card-body">
-              <p class="card-text">Lengua de Gato.</p>
-				<p>Valor: $800 c/u</p>
+              <p class="card-text">Lengua de Gato.</p><h6 class="item-price pb-3">$800</h6>
 				<div class="d-flex justify-content-between align-items-center">
                	 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary addToCart">Añadir al Carrito</button>
+                  <button type="button" class="btn btn-sm btn-outline-success addToCart">Añadir al Carrito</button>
                 </div>
                 <small class="text-muted"></small>
               </div>
@@ -219,11 +205,10 @@
           <div class="card mb-4 shadow-sm">
            <img src="Imagenes_pasteleria/mil_hoja.jpg" width="348" height="225">
             <div class="card-body">
-              <p class="card-text">Mil hojas.</p>
-				<p>Valor: $1.500 c/u</p>
+              <p class="card-text">Mil hojas.</p><h6 class="item-price pb-3">$1.500</h6>
 				<div class="d-flex justify-content-between align-items-center">
                	 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary addToCart">Añadir al Carrito</button>
+                  <button type="button" class="btn btn-sm btn-outline-success addToCart">Añadir al Carrito</button>
                 </div>
                 <small class="text-muted"></small>
               </div>
@@ -234,11 +219,10 @@
           <div class="card mb-4 shadow-sm">
            <img src="Imagenes_pasteleria/Pastel selva negra.JPG" width="348" height="225">
             <div class="card-body">
-              <p class="card-text">Pastel de Selva Negra.</p>
-				<p>Valor: $2.000</p>
+              <p class="card-text">Pastel de Selva Negra.</p><h6 class="item-price pb-3">$2.000</h6>
 				<div class="d-flex justify-content-between align-items-center">
                	 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary addToCart">Añadir al Carrito</button>
+                  <button type="button" class="btn btn-sm btn-outline-success addToCart">Añadir al Carrito</button>
                 </div>
                 <small class="text-muted"></small>
               </div>

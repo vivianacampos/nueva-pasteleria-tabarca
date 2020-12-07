@@ -89,8 +89,7 @@ return true;
 function validaEmail(email) {
 if (/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/.test(email)) {
 return true;
-}
-else {
+} else {
 return false;
-}
+	}
 }
